@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import emailjs from 'emailjs-com';  
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -23,33 +24,36 @@ export const Contact = () => {
       })
   }
 
-  const handleSubmit = async (e) => {
+
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    try {
-      const response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
+
+    emailjs.send(
+      "service_1gryin9",
+      "template_0vki0hp",
+      {
+        from_name: formDetails.firstName + " " + formDetails.lastName,
+        user_email: formDetails.email,
+        phone: formDetails.phone,
+        message: formDetails.message,
+      },
+      "y16baH37l5J3E5KQM"
+    )
+    
+      .then(() => {
+        setStatus({ success: true, message: "Message sent successfully" });
+        setFormDetails(formInitialDetails);
+        setButtonText("Send");
+      })
+      .catch((err) => {
+        console.error("Email error:", err);
+        setStatus({ success: false, message: "Something went wrong." });
+        setButtonText("Send");
       });
-  
-      const result = await response.json();
-      setButtonText("Send");
-      setFormDetails(formInitialDetails);
-  
-      if (result.code === 200) {
-        setStatus({ success: true, message: 'Message sent successfully' });
-      } else {
-        setStatus({ success: false, message: 'Something went wrong, please try again later.' });
-      }
-    } catch (error) {
-      setButtonText("Send");
-      setStatus({ success: false, message: 'Failed to send. Check console for errors.' });
-      console.error("Form submission error:", error);
-    }
   };
+  
   
   return (
     <section className="contact" id="connect">
