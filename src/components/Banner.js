@@ -61,7 +61,7 @@ export const Banner = () => {
                 
                 {/* Tombol Download CV */}
                 <a
-  href="/NewCV.pdf"
+  href="/NewNewCV.pdf"
   download
   className="btn btn-custom-download animate__animated animate__fadeInUp"
 >
