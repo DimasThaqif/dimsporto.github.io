@@ -300,6 +300,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+.btn-custom-download {
+  background: linear-gradient(to right, #7e5bef, #fb5dad);
+  color: white; /* ← Ini pastikan ada! */
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  text-decoration: none; /* agar tidak biru atau underline */
+}
+
+.btn-custom-download:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #fb5dad, #7e5bef);
+  color: white; /* tetap putih saat hover */
+}
+
+
+
+
 /************ About Css ************/
 .text-justify {
   text-align: justify;
@@ -394,7 +421,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  /* background-color: black; */
 }
 .project h2 {
 	font-size: 45px;
@@ -547,11 +574,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: scale(1.05);
 }
 
-.proj-description {
-  min-height: 100px; /* Ini menjaga tinggi konten agar rata */
-  text-align: center;
-  margin-top: 15px;
-}
+  .proj-description {
+    min-height: 100px; /* Ini menjaga tinggi konten agar rata */
+    text-align: center;
+    margin-top: 15px;
+  }
 
 
 

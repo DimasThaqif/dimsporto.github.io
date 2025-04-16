@@ -21,7 +21,7 @@ export const ProjectCard = ({ title, description, imgUrl, link, aosAnimation, ao
             <img src={imgUrl} alt={title} />
           </div>
         </a>
-        <div className="proj-description">
+        <div className="proj-description ">
           <h4>{title}</h4>
           <p>{description}</p>
         </div>

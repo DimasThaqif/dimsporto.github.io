@@ -4,8 +4,17 @@ import 'react-multi-carousel/lib/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import colorSharp from "../assets/img/color-sharp.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // tetap muncul animasi saat di scroll ulang
+    });
+  }, []);
+
   const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2 },
@@ -26,22 +35,16 @@ export const Skills = () => {
         { threshold: 0.5 }
       );
 
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-
+      if (ref.current) observer.observe(ref.current);
       return () => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
+        if (ref.current) observer.unobserve(ref.current);
       };
     }, []);
 
     useEffect(() => {
       if (!isVisible) return;
-
       let start = 0;
-      const duration = 1000; // 1 second
+      const duration = 1000;
       const increment = value / (duration / 20);
       const timer = setInterval(() => {
         start += increment;
@@ -51,12 +54,15 @@ export const Skills = () => {
         }
         setProgress(Math.round(start));
       }, 20);
-
       return () => clearInterval(timer);
     }, [isVisible, value]);
 
     return (
-      <div ref={ref} className="item d-flex flex-column align-items-center p-3">
+      <div
+        ref={ref}
+        data-aos="zoom-in"
+        className="item d-flex flex-column align-items-center p-3"
+      >
         <div style={{ width: 150, height: 150 }}>
           <CircularProgressbar
             value={progress}
@@ -80,10 +86,11 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn text-center">
+            <div className="skill-bx text-center" data-aos="fade-up">
               <h2>Skills</h2>
-              <p className="text-justify">
-  Saya adalah seorang UI/UX Designer dan Web Developer yang berfokus pada pembuatan antarmuka yang intuitif dan pengalaman pengguna yang optimal dengan pendekatan desain yang human-centered dan kemampuan teknis dalam pengembangan web, saya mampu mengubah ide menjadi produk digital yang fungsional dan menarik.</p>
+              <p className="text-justify" data-aos="fade-up" data-aos-delay="300">
+                Saya adalah seorang UI/UX Designer dan Web Developer dengan pengalaman 1+ tahun yang berfokus pada pembuatan antarmuka yang intuitif dan pengalaman pengguna yang optimal dengan pendekatan desain yang human-centered dan kemampuan teknis dalam pengembangan web, saya mampu mengubah ide menjadi produk digital yang fungsional dan menarik.
+              </p>
               <div className="d-flex justify-content-center mt-4">
                 <Carousel
                   responsive={responsive}
@@ -93,8 +100,8 @@ export const Skills = () => {
                   containerClass="carousel-container"
                   itemClass="d-flex justify-content-center"
                 >
-                  <SkillMeter title="UI/UX Design" value={85} />
-                  <SkillMeter title="Web Development" value={90} />
+                  <SkillMeter title="UI/UX Design" value={95} />
+                  <SkillMeter title="Web Development" value={80} />
                 </Carousel>
               </div>
             </div>

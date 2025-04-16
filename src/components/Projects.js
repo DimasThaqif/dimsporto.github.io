@@ -23,33 +23,33 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Company Profile",
+      description: "PT Binco Ran Nusantara",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Employee Attendence App",
+      description: "Self Project",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Deaf and Speech Impaired App",
+      description: "Bangkit Academy",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Workshop Ticket Retrieval App",
+      description: "Bengkel Bowo",
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Company Profile dan E-learning",
+      description: "Diggity",
       imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Management App",
+      description: "Dian Mandiri Group",
       imgUrl: projImg6,
     },
   ];
