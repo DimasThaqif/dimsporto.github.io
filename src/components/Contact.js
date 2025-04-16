@@ -29,15 +29,17 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
+  
+    
     emailjs.send(
       "service_1gryin9",
       "template_0vki0hp",
       {
-        from_name: formDetails.firstName + " " + formDetails.lastName,
-        user_email: formDetails.email,
-        phone: formDetails.phone,
-        message: formDetails.message,
+        firstName: formDetails.firstName,
+    lastName: formDetails.lastName,
+    email: formDetails.email,
+    phone: formDetails.phone,
+    message: formDetails.message
       },
       "y16baH37l5J3E5KQM"
     )
