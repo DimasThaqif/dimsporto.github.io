@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="d-flex align-items-center mb-2">
               <span className="h5 mb-0">PortoDims</span>
             </div>
-            <p className="mb-1">Email: dimasthaqif10@email.com</p>
+            <p className="mb-1">Email: dimasthaqif10@gmail.com</p>
             <p>Tamanan, Kecamatan Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta, Indonesia</p>
           </Col>
 
