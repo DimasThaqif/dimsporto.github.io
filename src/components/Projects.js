@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/konektra.jpg";
 import projImg4 from "../assets/img/Bengkel.png";
 import projImg5 from "../assets/img/Diggity.png";
 import projImg6 from "../assets/img/Manajemen.png";
+import projImg7 from "../assets/img/solar.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -49,9 +50,14 @@ export const Projects = () => {
     },
     {
       title: "Management App",
-      description: "Dian Mandiri Group",
+      description: "DianMandiri Group",
       imgUrl: projImg6,
     },
+    {
+      title: "Solar Repo",
+      description: "Pt. Bina Lintas Usaha Ekonomi",
+      imgUrl: projImg7,
+    }
   ];
 
   return (

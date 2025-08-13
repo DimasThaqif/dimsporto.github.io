@@ -25,7 +25,7 @@ export const About = () => {
               Design. Saya memiliki kemampuan komunikasi yang baik dan mampu bekerja secara kolaboratif maupun mandiri. Selain itu, 
               saya juga terbiasa memecahkan masalah secara kreatif dan analitis. Saya senang mengeksplorasi ide-ide baru melalui proyek 
               pribadi untuk memperdalam pemahaman saya di bidang ini. Dengan semangat belajar yang tinggi, saya berkomitmen untuk 
-              terus mengembangkan kemampuan saya dan tumbuh sebagai seorang profesional di bidang UI/UX.
+              terus mengembangkan kemampuan saya dan tumbuh sebagai seorang profesional di bidang UI/UX dan Web Development.
               </p>
               <p className="text-justify" data-aos="fade-up" data-aos-delay="400">
               Dalam setiap proyek, saya selalu berusaha untuk menyelaraskan kebutuhan pengguna dan tujuan bisnis melalui pendekatan yang berbasis riset. Saya juga senang mengeksplorasi ide-ide baru melalui proyek pribadi untuk memperdalam pemahaman dan kemampuan teknis saya. Dengan semangat belajar yang tinggi dan dedikasi yang kuat, saya berkomitmen untuk terus tumbuh sebagai seorang profesional yang adaptif, inovatif, dan siap menghadapi tantangan industri digital.
@@ -34,7 +34,7 @@ export const About = () => {
               <h2 className="my-5" data-aos="zoom-in-up" data-aos-delay="500">Education</h2>
               <div className="education-timeline">
                 <div className="timeline-item mb-5 text-start" data-aos="fade-right" data-aos-delay="600">
-                  <h4><strong>2021 - Sekarang</strong></h4>
+                  <h4><strong>2021 - 2025</strong></h4>
                   <h5 className="mb-1">Universitas Ahmad Dahlan</h5>
                   <p className="mb-1">Informatika</p>
                   <p className="text-muted">Yogyakarta, Indonesia</p>

@@ -101,7 +101,7 @@ export const Skills = () => {
                   itemClass="d-flex justify-content-center"
                 >
                   <SkillMeter title="UI/UX Design" value={95} />
-                  <SkillMeter title="Web Development" value={80} />
+                  <SkillMeter title="Web Development" value={90} />
                 </Carousel>
               </div>
             </div>
