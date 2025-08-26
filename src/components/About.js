@@ -20,7 +20,7 @@ export const About = () => {
             <div className="about-bx text-center">
               <h2 className="mb-4" data-aos="zoom-in" data-aos-delay="100">About Me</h2>
               <p className=" text-justify" data-aos="fade-up" data-aos-delay="300">
-              Saya adalah mahasiswa  Program Studi Informatika di Universitas Ahmad Dahlan. Saya memiliki pengalaman dalam UI 
+              Saya lulusan baru Studi Informatika di Universitas Ahmad Dahlan. Saya memiliki pengalaman dalam front-end, UI 
               Design dan UX Research. Saya sangat antusias dalam mengembangkan keterampilan di bidang Web Development dan UI/UX 
               Design. Saya memiliki kemampuan komunikasi yang baik dan mampu bekerja secara kolaboratif maupun mandiri. Selain itu, 
               saya juga terbiasa memecahkan masalah secara kreatif dan analitis. Saya senang mengeksplorasi ide-ide baru melalui proyek 
@@ -28,7 +28,9 @@ export const About = () => {
               terus mengembangkan kemampuan saya dan tumbuh sebagai seorang profesional di bidang UI/UX dan Web Development.
               </p>
               <p className="text-justify" data-aos="fade-up" data-aos-delay="400">
-              Dalam setiap proyek, saya selalu berusaha untuk menyelaraskan kebutuhan pengguna dan tujuan bisnis melalui pendekatan yang berbasis riset. Saya juga senang mengeksplorasi ide-ide baru melalui proyek pribadi untuk memperdalam pemahaman dan kemampuan teknis saya. Dengan semangat belajar yang tinggi dan dedikasi yang kuat, saya berkomitmen untuk terus tumbuh sebagai seorang profesional yang adaptif, inovatif, dan siap menghadapi tantangan industri digital.
+              Dalam setiap proyek, saya selalu berusaha untuk menyelaraskan kebutuhan pengguna dan tujuan bisnis melalui pendekatan yang berbasis riset. 
+              Saya juga senang mengeksplorasi ide-ide baru melalui proyek pribadi untuk memperdalam pemahaman dan kemampuan teknis saya. 
+              Dengan semangat belajar yang tinggi dan dedikasi yang kuat, saya berkomitmen untuk terus tumbuh sebagai seorang profesional yang adaptif, inovatif, dan siap menghadapi tantangan industri digital.
               </p>
 
               <h2 className="my-5" data-aos="zoom-in-up" data-aos-delay="500">Education</h2>
