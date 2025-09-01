@@ -9,6 +9,7 @@ import {ProjectsFront} from "./components/ProjectsFront";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { About } from './components/About';
+import { Serti } from './components/Serti';
 import ProgrammingSkills from './components/ProgrammingSkill';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Projects />
       <ProjectsFront />
+      <Serti />
       <ProgrammingSkills />
       <Contact />
       <Footer />
