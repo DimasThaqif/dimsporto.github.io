@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/konektra.jpg";
 import projImg2 from "../assets/img/solar.png";
 import projImg3 from "../assets/img/karimun.png";
+import projImg4 from "../assets/img/Book.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -32,10 +33,16 @@ export const ProjectsFront = () => {
       link: "https://github.com/HajrilMalik/SolarRepo"
     },
     {
-      title: "Frontend Karimun",
+      title: "LandingPage Karimun",
       description: "Dicoding Project",
       imgUrl: projImg3,
       link: "https://github.com/DimasThaqif/Karimun"
+    },
+    {
+      title: "BookSelf",
+      description: "Dicoding Project",
+      imgUrl: projImg4,
+      link: "https://github.com/DimasThaqif/bookshelf-app-starter-project"
     }
   ];
 
